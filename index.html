@@ -33,7 +33,7 @@
       const authorEl = document.getElementById('qotd-author');
 
       // "Quote of the day" endpoint: one quote that changes daily
-      fetch('https://zenquotes.io/api/today')
+      fetch('https://zenquotes.io/api/random')
         .then(function (response) { return response.json(); })
         .then(function (data) {
           if (!Array.isArray(data) || !data[0]) return;
